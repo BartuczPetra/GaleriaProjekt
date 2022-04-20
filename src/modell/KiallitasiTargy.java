@@ -1,5 +1,6 @@
 package modell;
 
+import java.io.Serializable;
 import java.text.Collator;
 import java.time.LocalDate;
 import java.util.Comparator;
@@ -13,7 +14,7 @@ class CimComparator implements Comparator<KiallitasiTargy> {
     }
 }
 
-public abstract class KiallitasiTargy implements Comparable<KiallitasiTargy>{
+public abstract class KiallitasiTargy implements Comparable<KiallitasiTargy>, Serializable{
     private LocalDate letrehozasiDatum;
     private String keszito, cim;
     

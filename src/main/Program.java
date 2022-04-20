@@ -26,6 +26,13 @@ public class Program {
         for (KiallitasiTargy kiallitasiTargy : galeria) {
             System.out.println(kiallitasiTargy);
         }
+        System.out.println("");
+        galeria.kiir();
+        Galeria galeria2 = galeria.beolvas("galeria.bin");
+        for (KiallitasiTargy kiallitasiTargy : galeria2) {
+            System.out.println(kiallitasiTargy);
+        }
+        
     }
     
 }
