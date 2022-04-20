@@ -37,13 +37,21 @@ public abstract class KiallitasiTargy implements Comparable<KiallitasiTargy>{
     public String getCim() {
         return cim;
     }
-       
+
+    public String getKeszito() {
+        return keszito;
+    }
+
+    public LocalDate getLetrehozasiDatum() {
+        return letrehozasiDatum;
+    }
+    
 
     @Override
-    public int compareTo(KiallitasiTargy masik) {
-        Collator col = Collator.getInstance();
-        return col.compare(this.keszito, masik.keszito);
-    }
+    public abstract int compareTo(KiallitasiTargy masik);
+
+    @Override
+    public abstract String toString();
     
     
 }

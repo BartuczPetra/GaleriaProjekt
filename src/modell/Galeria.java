@@ -24,6 +24,14 @@ public class Galeria implements Iterable<KiallitasiTargy> {
             System.out.println(e);
         }
     }
+    
+    public void cimRendez(){
+        Collections.sort(targyak, KiallitasiTargy.CimRendezo());
+    }
+    
+    public void keszitoRendez(){
+        Collections.sort(targyak);
+    }
 
     @Override
     public Iterator<KiallitasiTargy> iterator() {
